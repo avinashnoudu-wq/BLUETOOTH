@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BT Tracker Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>BT Tracker Platform</h1>
+      <p class="subtitle">
+        Automated Bluetooth-based GPS data transmission and cloud integration
+      </p>
+    </header>
+
+    <section class="status-section">
+      <div class="status-item">
+        <span class="label">Bluetooth Support</span>
+        <span class="value" id="btStatus">Checking</span>
+      </div>
+
+      <div class="status-item">
+        <span class="label">Internet Connection</span>
+        <span class="value" id="netStatus">Checking</span>
+      </div>
+
+      <div class="status-item">
+        <span class="label">Cloud Status</span>
+        <span class="value" id="cloudStatus">Not connected</span>
+      </div>
+    </section>
+
+    <section class="action-section">
+      <button id="connectBtn">Initialize System</button>
+      <button id="testFirebaseBtn" type="button">Test Firebase</button>
+    </section>
+
+    <section class="data-section">
+      <h2>Live Device Data</h2>
+      <div id="deviceData">Waiting for data...</div>
+    </section>
+
+    <footer>
+      <p>BT Tracker © 2025</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

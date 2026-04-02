@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 720px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.status-section {
+  margin-top: 30px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.value {
+  color: #374151;
+}
+
+.action-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+button {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* 🔹 NEW: Live Device Data section */
+
+.data-section {
+  margin-top: 40px;
+}
+
+.data-section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+#deviceData {
+  padding: 16px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #111827;
+  min-height: 40px;
+  white-space: pre-wrap;
+}
